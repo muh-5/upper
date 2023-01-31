@@ -1,0 +1,41 @@
+.\" this is mdoc file
+.\" to read man page
+.\" $ man ./upper.1
+
+.Dd $Mdocdate$
+.Dt upper 1
+.Sh NAME
+.Nm upper
+.Nd convert characters from lowercase to uppercase
+.Sh SYNOPSIS 
+.Nm upper
+.Ar [options] [string1 string2 ...]
+.Sh DESCRIPTION
+upper convert characters in strings from lowercase to uppercase
+.Sh OPTIONS
+.Nm -f
+first character only
+.Sh EXAMPLES
+.Cm $
+.Nm
+string
+.Dl
+STRING
+.Dl
+.Cm $
+.Nm
+string1 string2 string3
+.Dl
+STRING1 STRING2 STRING3
+.Dl
+.Cm $
+.Nm
+-f string1 string2 string3
+.Dl
+String1 String2 String3
+.sh AUTHORS
+See the LICENSE file for the authors.
+.Sh LICENSE
+See the LICENSE file for the terms of redistribution.
+.Sh BUGS
+See the TODO file in the distribution.
