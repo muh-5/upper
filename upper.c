@@ -30,7 +30,10 @@ int main(int argc, char *argv[])
 	}
 
 	/* print each word separately */
-	while (w_count < argc) {	
+	while (w_count < argc) {
+		/* if '-f' in middle exit with help message */
+		if(w_count != 1 && !strcmp(argv[w_count], "-f"))
+			print_help();
 		/*print characters for each word */
 		for (int j = 0; j < strlen(argv[w_count]); j += 1) {
 			/* 
