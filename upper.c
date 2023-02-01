@@ -10,9 +10,9 @@ int f_check;
 void print_help()
 {
 	puts("usage:");
-	puts("$ upper [options] [text]");
+	puts("\t$ upper [options] [text]");
 	puts("options:");
-	puts("-f first character only");
+	puts("\t-f\tfirst character only");
 	exit(1);
 }
 
